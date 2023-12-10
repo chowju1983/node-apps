@@ -44,8 +44,8 @@ jobs:
       uses: azure/setup-kubectl@v3
       id: install
 
-    - name: Check Kubetcl Version
+    - name: Connect To EKS Cluster
       run: |
-         kubectl version
+         aws eks update-kubeconfig --name aiops-generative-airelease-infra-cluster --region us-east-1
 
     
