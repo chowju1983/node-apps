@@ -44,4 +44,8 @@ jobs:
       uses: azure/setup-kubectl@v3
       id: install
 
+    - name: Check Kubetcl Version
+      run: |
+         kubectl version
+
     
