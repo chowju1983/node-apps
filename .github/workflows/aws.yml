@@ -46,7 +46,7 @@ jobs:
 
     - name: Connect To EKS Cluster
       run: |
-         aws eks update-kubeconfig --name aiops-generative-airelease-infra-cluster --region us-east-1 .
+         aws eks update-kubeconfig --name aiops-generative-airelease-infra-cluster --region us-east-1
     
     - name: Check Pod status
       run: kubectl get po
