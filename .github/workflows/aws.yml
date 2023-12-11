@@ -33,7 +33,7 @@ on:
 jobs:
   deploy:
     name: Deploy
-    runs-on: self-hosted
+    runs-on: ["self-hosted","Linux","X64","abhishek-personal"]
     environment: production
 
     steps:
